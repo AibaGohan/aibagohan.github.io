@@ -60,7 +60,7 @@ a, button, input[type="button"], input[type="submit"] {
 
 ::selection {
     background: rgb(50 50 50);
-    color: white;
+    color: #faf4e4;
 }
 
 header {
