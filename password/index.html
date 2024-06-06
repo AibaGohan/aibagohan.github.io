@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四面牆 | 本格水冷</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color:#666;
+}
+
+#password-input {
+    padding: 12px 10px;
+    border: 1px solid #3b392c;
+    background-color: #fdf9ed;
+    font-size: 1.15rem;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    outline: none;
+    max-width: 180px;
+    color: #666;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 5px;
+}
+
+#password-input:focus {
+    border-color: #F47B32;
+}
+
+#password-section button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #3b392c;
+    font-size: 1.15rem;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    color: #fdf9ed;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#password-section button:hover {
+    background-color: black;
+}
+
+.download-button{
+    margin-bottom: 25px;
+    color: #3b392c;
+    background-color: #fdf9ed; /* initial color */
+    border: 1px solid #3b392c;
+    padding: 15px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 #3b392c; /* shadow effect */
+    display: inline-block;
+    width: 450px; /* Fixed width for all buttons */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+}
+
+.download-button:hover{
+    background-color: #F47B32; /* pink color on hover */
+    color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 black; /* shadow effect */
+}
+
+@media (max-width: 480px) {
+    .download-button {
+        width: 100%; /* Adjust the width as needed */
+    }
+}
+</style>
+<body>
+    <header>
+        <img src="/top.svg" alt="logo" class="logo" id="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="/hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+            <a href="/password" id="password-link">第四面牆</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="../navigation.js"></script>
+    <script src="password.js"></script>
+    <section id="password-section">
+        <div class="title-link">
+            <h2>第四面牆</h2>
+        </div>
+        <p>此頁面為密碼保護頁面
+            <br>
+            請輸入密碼</p>
+        <input type="password" id="password-input" placeholder="輸入密碼">
+        <button onclick="checkPassword()">確認</button>
+        <p id="error-message" style="color: #F47B32; display: none;">密碼錯誤，請重新輸入！</p>
+    </section>
+    <div id="content" style="display: none; padding: 5px 20px 10px 20px; margin: 5px auto; max-width: 800px;">
+        <div class="title-link">
+            <h2>第四面牆</h2>
+        </div>
+        <p>歡迎進入！
+        <br>這裡是加密後的內容區域，請享用。</p>
+        <a href="Nostalgia01.pdf" download="《Re: seE neW thE worlD》花落流水：雷嵐&極樂組" target="_blank">
+            <button type="button" class="download-button">《Re: seE neW thE worlD》花落流水：雷嵐&極樂組</button>
+        </a>
+        <br>
+        <a href="Daydream02.pdf" download="《Re: seE neW thE worlD》一蓮托生：全員" target="_blank">
+            <button type="button" class="download-button">《Re: seE neW thE worlD》一蓮托生：全員</button>
+        </a>
+        <br>
+        <a href="qingxiao1.txt" download="《青霄有路》卷一：大風捲水" target="_blank">
+            <button type="button" class="download-button">《青霄有路》卷一：大風捲水</button>
+        </a>
+        <br>
+        <a href="download2.zip" download="《青霄有路》卷二：浩然彌哀" target="_blank">
+            <button type="button" class="download-button">《青霄有路》卷二：浩然彌哀</button>
+        </a>
+        <br>
+        <a href="Chitchat_by_3ben.jpg" download="【闲聊】关于别家的孩子" target="_blank">
+            <button type="button" class="download-button">【闲聊】关于别家的孩子</button>
+        </a>
+    </div>
+    <script src="/footer.js"></script>
+</body>
+</html>

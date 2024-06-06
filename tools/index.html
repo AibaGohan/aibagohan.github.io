@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龍的寶庫 | 本格水冷</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    p{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color:#666;
+    }
+</style>
+<body>
+    <header>
+        <img src="/top.svg" alt="logo" class="logo" id="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="/hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+            <a href="/password" id="password-link">第四面牆</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="../navigation.js"></script>
+    <section id="introduction">
+        <div class="title-link">
+            <h2>龍的寶庫</h2>
+        </div>
+        <div class="section">
+            <h3>01｜起名工具</h3>
+            <p>隨機生成角色人名 / 招式 / 武器 / 城鎮名稱或查詢人名典故。</p>
+            <div class="buttons-container" style="margin-bottom: 50px;">
+                <a href="https://www.behindthename.com/" class="styled-button-link" target="_blank">Behind the Name</a>
+                <a href="https://www.behindthename.com/random/" class="styled-button-link" target="_blank">BTN: Random Name Generator</a>
+                <a href="https://blog.reedsy.com/character-name-generator/language/" class="styled-button-link" target="_blank">Language Name Generators</a>
+                <a href="https://www.fantasynamegenerators.com/" class="styled-button-link" target="_blank">Fantasy Name Generators</a>
+                <a href="https://www.worldsys.org/europe/random/" class="styled-button-link" target="_blank">欧羅巴人名録</a>
+                <a href="http://www.mithrilandmages.com/utilities/CityNames.php" class="styled-button-link" target="_blank">城鎮地名產生器</a>
+                <a href="http://www.hipenpal.com/tool/japanese-names-make-my-japanese-name-in-traditional-chinese.php" class="styled-button-link" target="_blank">Hi!Penpal! 日文起名</a>
+                <a href="https://riyutool.com/name/" class="styled-button-link" target="_blank">随机日本姓名生成器</a>
+                <a href="https://japanese-names.info/" class="styled-button-link" target="_blank">Japanese Name Dictionary</a>
+                <a href="https://myoji-yurai.net/" class="styled-button-link" target="_blank">名字由来net</a>
+                <a href="https://www.qmsjmfb.com/" class="styled-button-link" target="_blank">中文网名在线生成器</a>
+                <a href="https://hetu.dev/random-names/" class="styled-button-link" target="_blank">仙侠小说专有名词随机生成器</a>
+                <a href="https://www.bzcm88.com/xiaoshuo/" class="styled-button-link" target="_blank">小说人名生成器</a>
+                <a href="https://www.halove.net/ming/wuxia.php" class="styled-button-link" target="_blank">武侠人物起名</a>
+                <a href="https://wtf.hiigara.net/t/4tevc1" class="styled-button-link" target="_blank">鬼東西：絕招名稱生成器</a>
+                <a href="http://pha22.net/name2/" class="styled-button-link" target="_blank">二つ名メーカー</a>
+                <a href="https://shindanmaker.com/226678" class="styled-button-link" target="_blank">【厨二】あなたの必殺技！ジェネレーター</a>
+                <a href="http://www.name-automaker.com/index.php" class="styled-button-link" target="_blank">大批量名前自動產生器</a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>02｜靈感生成</h3>
+            <p>靈感生成角子機。沒想法剋星。</p>
+            <div class="buttons-container" style="margin-bottom: 50px;">
+                <a href="http://slot.miario.com/machines/162454" class="styled-button-link" target="_blank">靈感產生器</a>
+                <a href="https://bi.guhub.cn/" class="styled-button-link" target="_blank">怪奇灵感生成器</a>
+                <a href="https://monkeytype.zeabur.app/" class="styled-button-link" target="_blank">猴子打字机：文字沙拉生成器</a>
+                <a href="https://www.qqxiuzi.cn/zh/suiji-hanzi/" class="styled-button-link" target="_blank">随机汉字词语生成器</a>
+                <a href="https://wtf.hiigara.net/t/OAZI0N/412414" class="styled-button-link" target="_blank">遗失的灵感</a>
+                <a href="https://donjon.bin.sh/" class="styled-button-link" target="_blank">donjon; RPG Tools</a>
+                <a href="https://writingexercises.co.uk/dialogue-generator.php" class="styled-button-link" target="_blank">Random First Line of Dialogue</a>
+                <a href="https://tarot-plot.com/theme/idea" class="styled-button-link" target="_blank">即席アイデアメーカー</a>
+                <a href="https://www.seventhsanctum.com/generate.php?Genname=plottwist" class="styled-button-link" target="_blank">大逆轉劇情產生器</a>
+                <a href="https://blog.reedsy.com/plot-generator/" class="styled-button-link" target="_blank">Plot Generator</a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>03｜圖創利器</h3>
+            <p>思維導圖和地圖製作工具。</p>
+            <div class="buttons-container"style="margin-bottom: 50px;">
+                <a href="https://www.mindmeister.com/" class="styled-button-link" target="_blank">MindMeister</a>
+                <a href="https://www.figma.com/" class="styled-button-link" target="_blank">Figma</a>
+                <a href="https://azgaar.github.io/Fantasy-Map-Generator/" class="styled-button-link" target="_blank">Azgaar's Fantasy Map Generator</a>
+                <a href="https://donjon.bin.sh/world/" class="styled-button-link" target="_blank">donjon Fantasy World Generator</a>
+                <a href="https://inkarnate.com/" class="styled-button-link" target="_blank">Inkarnate - Fantasy Maps Online</a>
+                <a href="https://www.worldanvil.com/features/maps" class="styled-button-link" target="_blank">World Anvil: Fantasy Map Maker</a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>04｜稀奇古怪</h3>
+            <p>別的一些不太好歸類的資料站或性質奇怪的產生器。</p>
+            <div class="buttons-container">
+                <a href="https://zh.moegirl.org.cn/Template:%E8%90%8C%E5%B1%9E%E6%80%A7" class="styled-button-link" target="_blank">萌娘百科：萌属性一览</a>
+                <a href="https://zh.moegirl.org.cn/Template:ACG%E8%83%BD%E5%8A%9B" class="styled-button-link" target="_blank">萌娘百科：ACG能力一览</a>
+                <a href="https://rekowiki.org/" class="styled-button-link" target="_blank">Reko Wiki</a>
+                <a href="http://ccl.pku.edu.cn:8080/ccl_corpus/index.jsp" class="styled-button-link" target="_blank">北京大學CCL語料庫檢索系統</a>
+                <a href="https://www.random.org/quick-pick/" class="styled-button-link" target="_blank">樂透號碼隨機產生器</a>
+                <a href="https://valhyr.com/pages/rune-converter" class="styled-button-link" target="_blank">盧恩字母轉換器</a>
+                <a href="https://text-summary.userlocal.jp/" class="styled-button-link" target="_blank">自動要約ツール</a>
+                <a href="https://rolladie.net/" class="styled-button-link" target="_blank">Roll a Die</a>
+                <a href="https://www.paddlepaddle.org.cn/hub/scene/ocr" class="styled-button-link" target="_blank">PaddleOCR：超轻量中英文识别</a>
+                <a href="https://web.baimiaoapp.com/" class="styled-button-link" target="_blank">白描网页版：图片转文字在线</a>
+            </div>
+        </div>
+    </section>
+    <script src="/footer.js"></script>
+</body>
+</html>

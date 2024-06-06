@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五胖嚴選 | 本格水冷</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    h2{
+       color:#3b392c;
+       font-weight: bolder;
+    }
+    .content {
+        display: flex;
+        align-items: flex-start; /* 修改这里使内容紧贴顶部 */
+        margin-bottom: 35px;
+    }
+
+    .content img {
+        width: 25%; /* 图片占据容器的一半宽度 */
+        height: auto; /* 高度自动 */
+    }
+
+    .content .text {
+        width: 75%; /* 文字内容占据另一半宽度 */
+        padding: 0 20px; /* 文字周围留有一些空间 */
+        margin: 0px;
+    }
+
+    .ptitle {
+    line-height: 1.80;
+    margin-bottom: 15px; 
+    margin-top: 0px;
+    font-size: 1.30rem;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
+    }
+
+    .box-header {
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: 650px) { /* 当屏幕宽度小于600px时应用以下样式 */
+    .content {
+        flex-direction: column; /* 改为垂直布局 */
+        margin-bottom: 20px;
+    }
+
+    .content img {
+        width: 50%; /* 图片和文字各占满整个容器宽度 */
+        margin: 0 auto; /* 上下边距为0，左右自动，实现居中 */
+    }
+
+    .content .text {
+        width: 100%; /* 图片和文字各占满整个容器宽度 */
+    }
+
+    .content .text {
+        padding: 20px 0; /* 调整内边距以适应新布局 */
+    }
+    }
+</style>
+<body>
+    <header>
+        <img src="/top.svg" alt="logo" class="logo" id="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="/hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+            <a href="/password" id="password-link">第四面牆</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="../../navigation.js"></script>
+    <script src="../expandable.js"></script>
+    <section id="introduction">
+        <div class="title-link">
+            <h2>五胖嚴選</h2>
+        </div>
+        <p style="padding-bottom: 25px; margin: 0px;">本欄目為純主觀推薦。如果評語講到了你的心頭上，那實在榮幸之至；若出現了你討厭的作品，那就說明筆者的漫畫品味不足以與您同日而語，請不必勉強自己，點擊瀏覽器右上角的紅叉果斷退出。本頁的首要目的是賣安利，所以會在專注於介紹每部作品的獨特之處的同時儘量避免劇透。
+        </p>
+        <div class="box">
+            <div class="box-header">奇幻</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="SpiritCircle.png" alt="魂環">
+                    <div class="text">
+                        <p class="ptitle"><b>魂環 / スピリットサークル</b></p>
+                        <p>細膩，溫和，充滿宿命感又帶著一縷鄉愁味道的輪迴系作品。<s>在猴區被稱為炎拳唯一指定解藥。</s>
+                            <br>水上悟志老師講故事的功力了得，對情緒起伏的把握也妙到毫巔，總能從時間長河中的細枝末節處挖掘出真情實感，編織成環，然後再將之匯聚到一點集中爆發出來。
+                            <br>個人覺得優秀的作品就理應是這個樣子的。既有宏大背景所帶來的戲劇張力，又有心思細膩所帶來的情感共振，悲傷流淚後也會轉眼間破涕而笑。
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="DungeonMeshi.png" alt="ダンジョン飯">
+                    <div class="text">
+                        <p class="ptitle"><b>迷宮飯 / ダンジョン飯 </b></p>
+                        <p><s>Q：為什麼近期完結的大熱作會出現在這個欄目裡？
+                            <br>A：因為筆者很喜歡九井諒子老師。</s>
+                            <br>九井身為創作者有個不算常見的才能，她能以上帝視角做到對角色和作品保持絕對中立感，也就是所謂「神的冷淡」。
+                            <br>本作讓筆者最為印象深刻的一點就是，整部作品觀看完畢後，幾乎完全感受不到作者本人對任何角色的偏心，甚至無法感受到作者私心的存在。慾望的投射、政治的立場、全都看不見。
+                            <br>這種程度的中立難能可貴。
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="DragonBall.png" alt="ドラゴンボール">
+                    <div class="text">
+                        <p class="ptitle"><b>七龍珠 / ドラゴンボール </b></p>
+                        <p><s>Q：為什麼世界上最知名、無人不知無人不曉的漫畫作品會出現在這個欄目裡？
+                            <br>A：因為筆者真的很喜歡鳥山明老師。</s>
+                            <br>無數人從小讀到大的作品。輕鬆、隨性、純真且搞笑。
+                            <br>本作沒有絲毫的政治性，從故事裡幾乎無法看出作者本人強烈的觀點和私心。中立性強的作者不是沒有，但少年漫畫的領域很少見。不僅如此，作品裡更是沒有複雜的戰鬥力體系、各種花俏的世界觀設定，連主角也毫無苦大仇深的宿命感。
+                            <br>本作的故事說穿了，真的就是好人打壞蛋然後打贏了。筆者甚至都沒辦法在其中補充太多細節。因為武戲必須要看漫畫才能領略，而在這之外，龍珠幾乎是沒有任何分量深重的文戲可言的。
+                            <br>鳥山明在他的漫畫中不說教、不糾結男女之情的拉扯、也不宣揚自己的世界觀和價值觀，只是緘默地呈現奇妙的世界、刺激的冒險、精彩的打鬥和偶爾無厘頭的橋段。他幾乎是僅僅依靠著「畫面」這個媒介，就能讓讀者不知不覺地沉迷在書頁之中。他卓越的漫畫才能可見一斑。
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="Berserk.png" alt="ベルセルク">
+                    <div class="text">
+                        <p class="ptitle"><b>劍風傳奇 / ベルセルク </b></p>
+                        <p><s>白泉社第一少女漫。</s>
+                        <br>一人一劍抗爭命運的激烈故事。
+                        <br>究竟怎樣的結局才配得上這一路的顛沛流離，可惜已經無法見證了。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">科幻</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="FullMetal.png" alt="鋼の錬金術師">
+                    <div class="text">
+                        <p class="ptitle"><b>鋼之鍊金術師 / 鋼の錬金術師</b></p>
+                        <p>故事工整節奏緊湊，十本左右的內容幾乎全是主線完全沒有注水部分。應當被列入少年漫畫敘事教科書<s>（沒有這種東西</s>
+                            <br>除了穩紮穩打環環相扣的敘事外，本作最令人讚歎的是將設定中的鍊金術原理（循環、流動、一即是全全即是一）完完全全貫徹進了角色信條、情節發展、故事理念等整部作品的方方面面，就連完滿的收尾都像極了煉成陣基礎的圓。
+                            <br>不過論情感渲染以及歷史厚重感，個人認為還是FA動畫版更勝一籌。
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="Gaitenro.png" alt="外天楼">
+                    <div class="text">
+                        <p class="ptitle"><b>外天樓 / 外天楼</b></p>
+                        <p>也許是短篇懸疑漫畫的一種標準答案。
+                        <br>雖然對關鍵議題點到即止，且拼接並沒有做到盡善盡美，但完成度相當高，讓人大呼過癮。小情節搞笑、大背景超前、主線曲折，劇情不斷反轉，永遠猜不到下一步的展開，在反轉中恍然大悟的銜接與收束。層次感非常清晰，而且核心矛盾無所不在。
+                        <br>儘管還是逃不過老套的「人類感情論」，但是這部誕生於十多年前的作品已經不只在思考機器人倫理，甚至融合了人造生命體，即使在ChatGPT誕生的今天看來仍然不落伍。</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="Nausicaa.png" alt="風の谷のナウシカ">
+                    <div class="text">
+                        <p class="ptitle"><b>風之谷 / 風の谷のナウシカ </b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">歷史</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="GoldenKamuy.png" alt="ゴールデンカムイ">
+                    <div class="text">
+                        <p class="ptitle"><b>黃金神威 / ゴールデンカムイ</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="MessageToAdolf.png" alt="アドルフに告ぐ">
+                    <div class="text">
+                        <p class="ptitle"><b>三個阿道夫 / アドルフに告ぐ</b></p>
+                        <p style="color: rgb(76, 150, 252);">趣味性，戲劇性，嚴肅性兼顧的高品質作品，至今未能被超越的頂級反戰漫畫。偉大無需多言（意思說是Under Construction改天再言</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">運動</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="Medalist.jpg" alt="メダリスト">
+                    <div class="text">
+                        <p class="ptitle"><b>舞冰的祈願 / メダリスト</b></p>
+                        <p>雙主角花樣滑冰作品。絕對的畫力和分镜能力能給人帶來無與倫比的沉浸感和震撼，台詞也是濃縮的雞湯震得心砰砰迴響。
+                        <br>甚至還讓筆者這種花滑知識為零的徹徹底底門外漢特地跑去百科上背了一大堆術語。不過作品內的講解已經足夠用心了即使完全不了解花樣滑冰也可以放心去看。
+                        <br>請大家在眼睛遭到ENGI的動畫改編污染前先來看看原作固定一下第一印象！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">國產</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="HuoFeng.png" alt="火鳳燎原">
+                    <div class="text">
+                        <p class="ptitle"><b>火鳳燎原</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="WudaoKuang.png" alt="武道狂之詩">
+                    <div class="text">
+                        <p class="ptitle"><b>武道狂之詩</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="BiaoRen.png" alt="镖人">
+                    <div class="text">
+                        <p class="ptitle"><b>镖人</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="JueDing.png" alt="绝顶">
+                    <div class="text">
+                        <p class="ptitle"><b>绝顶</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="Queen.png" alt="拜见女皇陛下">
+                    <div class="text">
+                        <p class="ptitle"><b>拜见女皇陛下</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">Webtoon</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="MountHua.png" alt="화산귀환">
+                    <div class="text">
+                        <p class="ptitle"><b>劍尊歸來 / 화산귀환</b></p>
+                        <p>近幾年大量発生的重生流武俠Webtoon條漫，華山派高手死掉轉生到100年後的故事。但這篇是Webtoon武俠分類第一，搞不好也是Naver歷年所有作品中綜合實力最高的一作。
+                        <br>大工作室出品，文戲武戲以及顏藝水準都幾乎無可挑剔。有著恰到好處的光影與行雲流水般的分鏡，嚴肅與喜劇之間的平衡也把握得很出色。
+                        <br>有別於市面上其他個人主義龍傲天爽漫，本作主角開局就很強卻要肩負起重振門派的重任。因為個人實力已經沒有可提升的空間了於是作者另闢蹊徑，著墨於天才的侷限性以及門派意志延續的必要性，將重點聚焦於「華山派」這個整體而非主角一人。隨著晚輩們實力逐漸提升，主角也經歷了心境上的成長。
+                        <br>是少數能讓筆者體會到真正的武俠精神的韓國Webtoon漫。</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="CrazyDemon.jpg" alt="광마회귀">
+                    <div class="text">
+                        <p class="ptitle"><b>狂魔重生記 / 광마회귀</b></p>
+                        <p>還是重生流武俠作品，有著狂魔稱號的高手轉生的故事。和上面那部不同，這部比較吃電波，對上電波了就會覺得非常有意思，對不上會覺得主角和劇情莫名其妙。
+                        <br>故事有趣就在於，身為狂魔的主角真的有夠狂。他不僅行事張狂也毫無邏輯可言，只要想到什麼就會立刻付諸實行。對於身邊一眾常識人跟班來講，光是要試著跟上主角的腳步就已經費盡全力，更遑論追上他的思緒。
+                        <br>作品主要通過主角反覆無常的個性製造各種吐嘈與笑料來推進；看狂魔各種開掛發神經，然後配角吐槽，娛樂度極高！非常優秀的廁所讀物！</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="EstateDeveloper.png" alt="역대급 영지 설계사">
+                    <div class="text">
+                        <p class="ptitle"><b>史詩級領地設計師 / 역대급 영지 설계사</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="MessWithMyBrother.png" alt="내 동생 건들면 너희는 다 죽은 목숨이다">
+                    <div class="text">
+                        <p class="ptitle"><b>敢動我弟弟就死定了 / 내 동생 건들면 너희는 다 죽은 목숨이다</b></p>
+                        <p style="color: rgb(76, 150, 252);">評語Under Construction中</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">BL</div>
+            <div class="box-content hidden">
+                <div class="content">
+                    <img src="DiedFriend.png" alt="死んだ親友に告白された話">
+                    <div class="text">
+                        <p class="ptitle"><b>死去的摯友向我表白了 / 死んだ親友に告白された話</b></p>
+                        <p>去世很久的親友化身幽靈向主角告白的BL作品。身為死亡題材卻沒有想象中那麼沉重，非常平靜溫馨又充滿生活氣息，但回過頭來重看又有種淡淡的哀傷。
+                        <br>親近之人的離開不是一場暴雨，而是漫長的潮濕。在某個平凡的日子裡，當與那個人相關的記憶無意中被觸動時，那些共同度過的、看似微不足道但又難以忘懷的細節，就會像巨石一樣砸向心防。
+                        <br>兩個人未盡的話都用「打遊戲」來取代。既是彼此之間的聯結，也是難以宣之於口的心情。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/footer.js"></script>
+</body>
+</html>
