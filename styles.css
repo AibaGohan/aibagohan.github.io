@@ -415,7 +415,7 @@ ul{
 
 .separatorchara {
     margin-right: 2px;
-    margin-left: 2px;
+    margin-left: 1px;
     color: #faf4e4;
     cursor: default; /* Ensures it doesn't show the pointer cursor */
     text-decoration: none;
@@ -429,12 +429,11 @@ ul{
 .category-items span.active {
     /*border-bottom: 1px solid #3b392c;*/
     /* color: #3b392c; */
-    border-bottom: 2px solid #faf4e4;
+    text-decoration: underline;
+    text-decoration-color: #faf4e4;
     color: #faf4e4;
-    text-decoration: none;
-    margin-left: 8px;
-    margin-right: 8px;
-    -webkit-text-stroke: 0.75px #faf4e4;; /* 添加1像素的文本描边 */
+    margin: 0.5px 8px 0px 8px;
+    -webkit-text-stroke: 0.5px #faf4e4;; /* 添加1像素的文本描边 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
