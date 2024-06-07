@@ -1393,6 +1393,10 @@ img {
         font-size: 1rem;
     }
 
+    .c {
+        font-size: 1.6rem !important;
+    }
+
     .tag {
         padding: 4px 10px; /* 添加一些内边距使标签更易读 */
         margin-right: 4px; /* 标签之间的间距 */
