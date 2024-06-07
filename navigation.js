@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
         function handleTextCursor(event) {
             const element = document.elementFromPoint(event.clientX, event.clientY);
             const textTags = ['P', 'S', 'LI', 'STRONG'];
-            const parentClasses = ['quote-section', 'excerpt'];
+            const parentClasses = ['quote-section', 'excerpt', 'character-content'];
             
             if (element) {
                 if (textTags.includes(element.tagName) || parentClasses.some(className => element.closest('.' + className))) {
