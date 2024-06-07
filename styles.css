@@ -381,19 +381,18 @@ ul{
 }
 
 .category-items a {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0px 6.5px 0.5px 6.5px;
     /*color: #3b392c; */
     color: #faf4e4;
     text-decoration: none;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
 .category-items a:hover {
     background-color: rgb(76, 150, 252);
     background-color: #F47B32 !important;
     color: black;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0px 6.5px 0.5px 6.5px;
 }
 
 .separator {
@@ -424,12 +423,13 @@ ul{
 .category-items span.active {
     /*border-bottom: 1px solid #3b392c;*/
     /* color: #3b392c; */
-    border-bottom: 1px solid #faf4e4;
+    border-bottom: 2px solid #faf4e4;
     color: #faf4e4;
     text-decoration: none;
     margin-left: 8px;
     margin-right: 8px;
-    font-weight: 900;
+    -webkit-text-stroke: 0.75px #faf4e4;; /* 添加1像素的文本描边 */
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
 
 .excerpt {
