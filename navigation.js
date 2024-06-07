@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://tieba.baidu.com/home/main?id=tb.1.428b3914.fTqSzh1wdmWO4V30k21dFw?t=1706283902" target="_blank">
                     <img src="${basePath}contact/tieba-icon.svg" alt="Tieba">
                 </a>
-                <a href="https://qm.qq.com/q/LV1tWyKKeQ" target="_blank">
+                <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1016070674" target="_blank">
                     <img src="${basePath}contact/qq-icon.svg" alt="QQ">
                 </a>
                 <a href="https://discordapp.com/users/315194753757085697" target="_blank">
