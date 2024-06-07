@@ -60,7 +60,7 @@ a, button, input[type="button"], input[type="submit"] {
 
 ::selection {
     background: rgb(50 50 50);
-    color: #faf4e4;
+    color: #fffcf5;
 }
 
 header {
@@ -362,6 +362,7 @@ ul{
     box-sizing: border-box; /* Ensures the border is included in the max-width */
     margin-top: 5px;
     height: 37px !important;
+    margin-bottom: 15px;
 }
 
 .category {
@@ -1416,6 +1417,7 @@ img {
         display: block;
         padding: 0px;
         border: none;
+        margin-bottom: 5px;
     }
 
     .category {
