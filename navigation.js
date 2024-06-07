@@ -1,35 +1,3 @@
-function setSocialShareTags(title, description, imageUrl, pageUrl) {
-    const metaTags = {
-        "og:description": "( ´∀｀)ヵヵヵ站主用來存放人設與古怪言論的自留地，算是半個部落格站。",
-        "og:image": "/ogimage.svg",
-        "og:type": "article"
-        "og:url": window.location.href,
-        "twitter:card": "summary_large_image",
-        "twitter:description": "( ´∀｀)ヵヵヵ站主用來存放人設與古怪言論的自留地。算是半個部落格站。",
-        "twitter:image": "/ogimage.svg",
-        "twitter:url": window.location.href
-    };
-
-    for (let property in metaTags) {
-        let metaTag = document.querySelector(`meta[property="${property}"]`) || document.querySelector(`meta[name="${property}"]`);
-        if (!metaTag) {
-            metaTag = document.createElement('meta');
-            if (property.startsWith("og:")) {
-                metaTag.setAttribute('property', property);
-            } else {
-                metaTag.setAttribute('name', property);
-            }
-            document.head.appendChild(metaTag);
-        }
-        metaTag.setAttribute('content', metaTags[property]);
-    }
-}
-
-setSocialShareTags();
-
-// Example usage:
-setSocialShareTags("Your Page Title", "A short description of your page.", "URL to your image", "URL of your page");
-
 document.addEventListener('DOMContentLoaded', function() {
     const depth = window.location.pathname.split('/').length - 1;
     const basePath = depth === 1 ? './' : '../'.repeat(depth - 1);
@@ -245,5 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('logo').addEventListener('click', function() {
         window.location.href = '/';
     });
+
+
 
 });
