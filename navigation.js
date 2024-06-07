@@ -1,3 +1,24 @@
+function setSocialShareTags(title, description, imageUrl, pageUrl) {
+    const metaTags = {
+        "og:description": "( ´∀｀)ヵヵヵ站主用來存放人設與古怪言論的自留地，算是半個部落格站。",
+        "og:image": "/ogimage.svg",
+        "og:type": "article"
+    };
+
+    for (let property in metaTags) {
+        let metaTag = document.querySelector(`meta[property="${property}"]`);
+        if (!metaTag) {
+            metaTag = document.createElement('meta');
+            metaTag.setAttribute('property', property);
+            document.head.appendChild(metaTag);
+        }
+        metaTag.setAttribute('content', metaTags[property]);
+    }
+}
+
+// Example usage:
+setSocialShareTags("Your Page Title", "A short description of your page.", "URL to your image", "URL of your page");
+
 document.addEventListener('DOMContentLoaded', function() {
     const depth = window.location.pathname.split('/').length - 1;
     const basePath = depth === 1 ? './' : '../'.repeat(depth - 1);
