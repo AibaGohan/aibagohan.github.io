@@ -31,7 +31,7 @@
 
     .box-header:hover { 
         background-color: #3b392c;
-        color: #fdf9ed;
+        color: #faf4e4;
         border: 1px solid #3b392c;
     }
 
@@ -48,11 +48,86 @@
         height: auto;
     }
 
+    .lang-proficiency {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+    }
+
+    .item {
+        color: #faf4e4;
+        background-color: #3b392c;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* 调整比例，使 .lang-code 稍微增加空间 */
+        align-items: center;
+    }
+    .lang-code, .userbox-content {
+        font-weight: bold;
+        margin-right: 10px;
+        border-right: 1px solid #faf4e4;
+        padding: 0px 10px 0px 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.15rem;
+        width: 56px !important;
+    }
+
+    .lang-description, .userbox-text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .userbox-text a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .userbox-text a:hover {
+        text-decoration: underline;
+    }
+
+
     @media (max-width: 650px) {
         .content img {
             width: 100%;
         }
+        .lang-code{
+            font-size: 1rem;
+        }
+        .lang-description{
+            font-size: 0.8rem;
+        }
+        .lang-code{
+            width: 30px !important;
+        }
+
     }
+
+    @media (max-width: 600px) {
+        .item{
+            grid-template-columns: 0.75fr 2,25fr; /* 调整比例，使 .lang-code 稍微增加空间 */
+        }
+        .lang-proficiency {
+            grid-template-columns: 1fr;
+        }
+        .lang-code{
+            font-size: 1.1rem;
+        }
+        .lang-description{
+            font-size: 1rem;
+        }
+        .lang-code{
+            padding: 15px 15px 15px 15px;
+            width: 50px !important;
+        }
+
+}
 </style>
 <body>
     <header>
@@ -69,13 +144,179 @@
         </nav>
     </header>
     <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
-    <script src="/navigation.js"></script>
+    <script src="../../navigation.js"></script>
     <script src="../../note/expandable.js"></script>
     <section id="introduction">
         <div class="title-link">
             <h2>自介DLC</h2>
         </div>
-        <h3>01｜工作相關</h3>
+        <h3>01｜直接抄襲了維基百科的簡單用戶框</h3>
+        <p>
+            <div class="box">
+                <div class="box-header">維基百科:巴別</div>
+                <div class="box-content hidden">
+                    <div class="content" style= "display: flex; justify-content: center; align-items: center;">
+                        <div class="lang-proficiency">
+                            <div class="item">
+                                <span class="lang-code">zh-N</span>
+                                <span class="lang-description">此用戶的母語是漢語。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">en-4</span>
+                                <span class="lang-description">This user can contribute with a near-native level of English.</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">ja-2</span>
+                                <span class="lang-description">この利用者は中級の日本語ができます。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">yue-2</span>
+                                <span class="lang-description">呢個用戶可以用一般嘅粵語進行交流。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">nan-1</span>
+                                <span class="lang-description">此個用者讀寫閩南話的能力是初級。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">hak-1</span>
+                                <span class="lang-description">這些用戶做得到簡單客語交流。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">淋語-2</span>
+                                <span class="lang-description">這位可人兒已經入逼13秒了，但素還需要繼續努力厚。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">prof-3</span>
+                                <span class="lang-description">此用戶經常說髒話，但仍可以控制。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">ints-3</span>
+                                <span class="lang-description">此用戶能以熟練的網路語言交流。</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">ja-moe-2</span>
+                                <span class="lang-description">この主人様は、ある程度の萌え萌え日本語を話せますけど…(゜-゜)</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">Bao-3</span>
+                                <span class="lang-description">此用戶每天游泳一千米，扛二百斤麥子，走十里山路都不換肩的！</span>
+                            </div>
+                            <div class="item">
+                                <span class="lang-code">trash-2</span>
+                                <span class="lang-description">此用戶的幹話達基礎水準，因此可以像某些人一樣說幹話。
+                                <br><i style="font-size: smaller;">「颱風天就是要泛舟！」</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">其他雜項</div>
+                <div class="box-content hidden">
+                    <div class="content" style= "display: flex; justify-content: center; align-items: center;">
+                        <div class="lang-proficiency">
+                            <div class="item" style="background-color: #CCCCFF; color: #AFEEEE ; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center;vertical-align:middle;color: #0047AB; font-family: sans-serif; font-weight: bold; border-right: 1px solid black;">2000s</div>
+                                <div class="userbox-text" style="color: #0047AB;">這個用戶是一位00後。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: #002A5C; border: 1px solid red;">
+                                <div class="userbox-content" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; border-right: 1px solid red;"><img src="Flag_of_Canada.svg.png" alt="Canada"></div>
+                                <div class="userbox-text" style="color: red;">這個用戶來自或居住在加拿大。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: #002A5C; border: 1px solid #002A5C;">
+                                <div class="userbox-content" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; border-right: 1px solid #002A5C;">UofT</div>
+                                <div class="userbox-text">這個用戶是多倫多大學的學生、校友或教職員。</div>
+                            </div>
+                            <div class="item" style="background-color: #ffd800; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid transparent;"><img src="Pansexuality_Pride_Flag.svg.png" alt="Pansexuality"></div>
+                                <div class="userbox-text">這個用戶自認是泛性戀。</div>
+                            </div>
+                            <div class="item" style="background-color: #FFFF77; color: black ; border: 1px solid black;">
+                                <div class="userbox-content" style="font-size: 1.3rem;text-align:center;vertical-align:middle;color: black; font-family: sans-serif; font-weight: bold; border-right: 1px solid black;">4</div>
+                                <div class="userbox-text">該用戶在金賽量表中的得分為4。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 4px solid gray;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.35rem;font-weight:bold;vertical-align:middle; border-right: 1px solid transparent;">老娘</div>
+                                <div class="userbox-text">此用戶使用女性人稱代詞「老娘」。</div>
+                            </div>
+                            <div class="item" style="background-color: #FFFFE0; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="S+S_Satz_Mopane.jpg" alt="clarinet"></div>
+                                <div class="userbox-text">這個用戶會演奏單簧管/黑管。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: #a80700; border: 1px solid #a80700;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="Tenorsax.jpg" alt="Tenorsax"></div>
+                                <div class="userbox-text">這個用戶會吹薩克斯風。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="70px-MarkIV-2.jpg" alt="guitar"></div>
+                                <div class="userbox-text">這個用戶會彈電吉他。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 1px solid gray;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="60px-Bosendorfer_185.jpg" alt="guitar"></div>
+                                <div class="userbox-text">這個用戶會彈鋼琴。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="Noteicon4.png" alt="notation"></div>
+                                <div class="userbox-text">這個用戶會音樂創作。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: #26A45B; border: 1px solid #26A45B;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="LMMS_logo_v1.2.2.png" alt="LMMS"></div>
+                                <div class="userbox-text">此用戶使用LMMS創作音樂。</div>
+                            </div>
+                            <div class="item" style="background-color: black; color: white; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="figma.png" alt="Figma"></div>
+                                <div class="userbox-text">該用戶使用Figma製作位圖及矢量圖。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 4px solid orange;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid transparent;"><img src="30px-Rainbow_brain,_Aug_2014.png" alt="Neurodiversity"></div>
+                                <div class="userbox-text">此用戶神經多元。</div>
+                            </div>
+                            <div class="item" style="background-color: #993333;; color: #ffdb4f; border: 1px solid #ffdb4f;">
+                                <div class="userbox-content" style="text-align:center;vertical-align:middle; font-size:1rem;border-right: 1px solid #ffdb4f;">ADHD-I</div>
+                                <div class="userbox-text">這個用戶患有注意力不足症。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: #0B0D89; border: 1px solid #0B0D89;">
+                                <div class="userbox-content" style="text-align:center; vertical-align:middle; border-right: 1px solid transparent;"><img src="Thomas_Henry_Huxley.jpg" alt="Agnosticism"></div>
+                                <div class="userbox-text">這個用戶是一個不可知論者。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 1px solid gray;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid gray;">人民律師</div>
+                                <div class="userbox-text">這個用戶認為維權律師們是可歌可泣的偉大人物。</div>
+                            </div>
+                            <div class="item" style="background-color: gray; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid gray;">F**k <br>GFW!</div>
+                                <div class="userbox-text">此用戶不滿中國大陸對網際網路的審查和封鎖。</div>
+                            </div>
+                            <div class="item">
+                                <div class="userbox-content">HTML-2</div>
+                                <div class="userbox-text">該用戶能一般地使用HTML。</div>
+                            </div>
+                            <div class="item">
+                                <div class="userbox-content">CSS-2</div>
+                                <div class="userbox-text">該用戶能一般地使用CSS。</div>
+                            </div>
+                            <div class="item">
+                                <div class="userbox-content">JS-1</div>
+                                <div class="userbox-text">該用戶剛開始使用JavaScript。</div>
+                            </div>
+                            <div class="item" style="background-color: #def; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid black;">🖊漢📕汉</div>
+                                <div class="userbox-text">這個用戶能熟練地用繁體書寫，流暢地閱讀簡體。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid black;">排便順暢</div>
+                                <div class="userbox-text">這個用戶一天至少拉一次屎。</div>
+                            </div>
+                            <div class="item" style="background-color: white; color: black; border: 1px solid black;">
+                                <div class="userbox-content" style="text-align:center;font-size:1.2rem;font-weight:bold;vertical-align:middle; border-right: 1px solid transparent;"><img src="Startle_Cube_45_x_45.jpg" alt="Scared"></div>
+                                <div class="userbox-text">這個用戶容易受到驚嚇，請勿拍打餵食。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </p>
+        <h3>02｜工作相關</h3>
         <p>在校時主修心理學與神經科學，輔修音樂表演。
             <br>從事的行業和所學知識關聯不大。
             <br>目前主職是律所敲鍵盤的文員兼打雜仔，副業是更加可悲的混音民工。</p>
@@ -87,12 +328,10 @@
                     </div>
                 </div>
             </div>
-        <h3 style="margin-top: 50px;">02｜宗教信仰</h3>
+        <h3 style="margin-top: 50px;">03｜宗教信仰</h3>
         <p>雙親以及身邊的長輩幾乎都是基督教衛理宗信徒，從小就跟著家裡人一起去教會。
             <br>但站主本人在從高中開始就是不可知論者，頂多每個禮拜日去Chapel蹭頓午飯。
             <br>Chapel裡大家都是好人，只是我不適合信教。</p>
-        <h3 style="margin-top: 50px;">03｜性取向</h3>
-            <p>性取向是男。雖然經常拿第四愛開玩笑實際上並沒有嘗試過，希望沒有人當真，哈哈...</p>
         <h3 style="margin-top: 50px;">04｜人格類型</h3>
         <p>沒忍住還是測來玩了</p>
         <div class="box">
