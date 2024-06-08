@@ -1673,8 +1673,8 @@ img {
     }
     .character-date{
         font-size: 0.85rem;
-        -webkit-text-stroke: 0.4px #3b392c; /* 添加1像素的文本描边 */
-        padding: 17.5px 0px 17.5px 12.5px;
+        -webkit-text-stroke: 0.5px #3b392c; /* 添加1像素的文本描边 */
+        padding: 17.5px 0px 17.5px 11.5px;
         width: 75px !important;
     }
     .character-content{
