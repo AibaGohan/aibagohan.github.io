@@ -69,7 +69,7 @@
         </nav>
     </header>
     <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
-    <script src="../navigation.js"></script>
+    <script src="/navigation.js"></script>
     <script src="../note/expandable.js"></script>
     <section id="introduction">
         <div class="title-link">
@@ -111,7 +111,7 @@
                     const now = new Date();
                     const diffTime = Math.abs(now - createdAt);
                     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                    document.getElementById('repo-age').innerHTML = `本站已經苟活了 <strong style="color: #F47B32; font-weight: bold; font-size: 1.75rem;"><u>${diffDays}</u></strong> 天！`;
+                    document.getElementById('repo-age').innerHTML = `今天是本站存在於這個世上的第 <h2 style="color: #F47B32;"><u>${diffDays}</u></h2> 天。`;
                   })
                   .catch(error => console.error('Error fetching repository data:', error));
               </script>
