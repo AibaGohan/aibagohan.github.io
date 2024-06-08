@@ -21,15 +21,6 @@
         <meta name="twitter:description" content="( ´∀｀)ヵヵヵ站主用來存放人設與古怪言論的自留地，算是半個部落格站。">
         <meta name="twitter:image" content="/ogimagesq.svg">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-17B0922MPY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-17B0922MPY');
-</script>
 <style>
     .box-header {
         cursor: pointer;
@@ -106,7 +97,25 @@
             <a href="DLC/" class="styled-button-link">>>點此進入<<</a>
         </div>
         <h3 style="margin-top: 50px;">04｜數據區域</h3>
-        <p></p>
+        <p>
+            <div id="repo-age">Calculating...</div>
+            <script>
+                const owner = 'AibaGohan';
+                const repo = 'aibagohan.github.io-OLD';
+                const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
+            
+                fetch(apiUrl)
+                  .then(response => response.json())
+                  .then(data => {
+                    const createdAt = new Date(data.created_at);
+                    const now = new Date();
+                    const diffTime = Math.abs(now - createdAt);
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                    document.getElementById('repo-age').innerText = `This repository has been around for ${diffDays} days.`;
+                  })
+                  .catch(error => console.error('Error fetching repository data:', error));
+              </script>
+        </p>
     </section>
     <script src="/footer.js"></script>
 </body>
