@@ -615,7 +615,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 .character-content {
     font-size: 1.05rem;
-    color: #727272;
+    color: #555;
     line-height: 1.65;
     padding: 0px 0px 20px 20px;
     font-family: 'Source Han Sans Traditional Chinese', sans-serif;
