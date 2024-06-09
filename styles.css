@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Noto Serif SC', 'Noto Serif Japanese', 'Noto Serif TC', serif;
+    font-family: 'Noto Serif TC', 'Noto Serif JP', 'Noto Serif SC', serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to top right, #faf4e4, #faf4e4), 
@@ -1164,14 +1164,14 @@ img {
 .bg-text-title {
     position: absolute;
     inset: 0;
-    top: 40px;
+    top: 43px;
     transform: translate(10%, 20%);
     font-family: 'Oooh Baby', sans-serif;
     color: #F47B32;
     font-size: 1.30rem; /* Adjust size to be smaller */
     z-index: -1;
     white-space: nowrap;
-    transform: rotate(-4deg); /* Apply 3-degree tilt */
+    transform: rotate(-1.5deg); /* Apply 3-degree tilt */
     -webkit-text-stroke: 0.25px #F47B32; /* 添加1像素的文本描边 */
 }
 
