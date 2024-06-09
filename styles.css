@@ -1172,7 +1172,7 @@ img {
     z-index: -1;
     white-space: nowrap;
     transform: rotate(-1.5deg); /* Apply 3-degree tilt */
-    -webkit-text-stroke: 0.25px #F47B32; /* 添加1像素的文本描边 */
+    -webkit-text-stroke: 0.35px #F47B32; /* 添加1像素的文本描边 */
 }
 
 /* Cursor Magic Mouse Styles */
@@ -1647,13 +1647,14 @@ img {
         cursor: pointer;
     }
 
-    .background-text,{
+    .background-text{
         font-size: 1.35rem; /* Adjust size to be smaller */
         -webkit-text-stroke: 0.55px #F47B32; /* 添加1像素的文本描边 */
     }
 
     .bg-text-title{
         font-size: 1.20rem; /* Adjust size to be smaller */
+        -webkit-text-stroke: 0.5px #F47B32; /* 添加1像素的文本描边 */
     }
     .header-content .details-button {
         width: 145px;
