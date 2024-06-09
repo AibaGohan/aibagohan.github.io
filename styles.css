@@ -235,6 +235,7 @@ ul{
     border-bottom: 1.5px solid #3b392c;
     margin-bottom: 40px;
     margin-top: 0px;
+    position: relative;
 }
 
 .title-link h2 {
@@ -618,7 +619,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     color: #555;
     line-height: 1.65;
     padding: 0px 0px 20px 20px;
-    font-family: 'Source Han Sans Traditional Chinese', sans-serif;
+    font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     border-left: 1px solid #3b392c;
 }
 
@@ -1159,6 +1160,21 @@ img {
     height: auto;
 }
 
+/* Background text */
+.bg-text-title {
+    position: absolute;
+    inset: 0;
+    top: 40px;
+    transform: translate(10%, 20%);
+    font-family: 'Oooh Baby', sans-serif;
+    color: #F47B32;
+    font-size: 1.30rem; /* Adjust size to be smaller */
+    z-index: -1;
+    white-space: nowrap;
+    transform: rotate(-4deg); /* Apply 3-degree tilt */
+    -webkit-text-stroke: 0.25px #F47B32; /* 添加1像素的文本描边 */
+}
+
 /* Cursor Magic Mouse Styles */
 .magicMouseCursor {
     position: absolute;
@@ -1631,9 +1647,13 @@ img {
         cursor: pointer;
     }
 
-    .background-text {
+    .background-text,{
         font-size: 1.35rem; /* Adjust size to be smaller */
         -webkit-text-stroke: 0.55px #F47B32; /* 添加1像素的文本描边 */
+    }
+
+    .bg-text-title{
+        font-size: 1.20rem; /* Adjust size to be smaller */
     }
     .header-content .details-button {
         width: 145px;
