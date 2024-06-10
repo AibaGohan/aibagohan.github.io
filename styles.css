@@ -1164,7 +1164,7 @@ img {
 .bg-text-title {
     position: absolute;
     inset: 0;
-    top: 43px;
+    top: 41px;
     transform: translate(10%, 20%);
     font-family: 'Oooh Baby', sans-serif;
     color: #F47B32;
