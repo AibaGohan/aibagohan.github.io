@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自用圖床 | 本格水冷</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="description" content="自用圖床。圖片版權歸原作者所有。">
+    <meta name="keywords" content="個人網站, 人設存放, 寫作內容展示">
+    <meta name="author" content="Aiba-Gogetsuhan">
+        <!-- Facebook Meta Tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="自用圖床 | 本格水冷">
+        <meta property="og:description" content="自用圖床。圖片版權歸原作者所有。">
+        <meta property="og:image" content="/ogimage.svg">
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="自用圖床 | 本格水冷">
+        <meta name="twitter:description" content="自用圖床。圖片版權歸原作者所有。">
+        <meta name="twitter:image" content="/ogimagesq.svg">
+</head>
+<style>
+    p{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color:#666;
+    }
+    .upload-container {;
+    }
+    .image-preview {
+        margin-top: 20px;
+    }
+    .image-preview img {
+        max-width: 100%;
+        height: auto;
+    }
+    .image-link {
+        margin-top: 10px;
+        word-break: break-all;
+    }
+</style>
+<body>
+    <header>
+        <img src="/top.svg" alt="logo" class="logo" id="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="/hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+            <a href="/password" id="password-link">第四面牆</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="../navigation.js"></script>
+    <section id="introduction">
+        <div class="title-link">
+            <div class="bg-text-title">Image Hosting</div>
+            <h2>自用圖床</h2>
+        </div>
+        <div class="upload-container">
+            <input type="file" id="fileInput" accept="image/*">
+            <div class="image-preview" id="imagePreview">
+                <!-- Preview will be displayed here -->
+            </div>
+            <div class="image-link" id="imageLink">
+                <!-- Image link will be displayed here -->
+            </div>
+        </div>
+        <script src="upload.js"></script>
+    </section>
+    <script src="/footer.js"></script>
+</body>
+</html>
