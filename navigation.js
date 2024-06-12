@@ -139,21 +139,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Initialize the cursor position at the mouse's current position
-        const initCursor = () => {
-            // Remove the initial centered positioning
-            document.addEventListener('mousemove', (e) => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-                cursorX = e.clientX;
-                cursorY = e.clientY;
-                magicPointer.style.left = `${e.clientX}px`;
-                magicPointer.style.top = `${e.clientY}px`;
-                magicMouseCursor.style.left = `${e.clientX}px`;
-                magicMouseCursor.style.top = `${e.clientY}px`;
-            }, { once: true });
-        };
+        function initCursor(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursorX = mouseX;
+            cursorY = mouseY;
+            magicPointer.style.left = `${mouseX}px`;
+            magicPointer.style.top = `${mouseY}px`;
+            magicMouseCursor.style.left = `${mouseX}px`;
+            magicMouseCursor.style.top = `${mouseY}px`;
+        }
 
-        initCursor();
+        document.addEventListener('mousemove', initCursor, { once: true });
         animateCursor();
 
         document.querySelectorAll('a, button, .hover-effect').forEach((el) => {
