@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://2.cynops.art/@aibagogetsuhan" target="_blank">
                     <img src="${basePath}contact/mastodon-icon.svg" alt="Mastodon">
                 </a>
-                <a href="https://cohost.org/longislandicedbear" target="_blank">
+                <a href="https://cohost.org/siboilingsalmon" target="_blank">
                     <img src="${basePath}contact/cohost-icon.svg" alt="Cohost">
                 </a>
             `;
