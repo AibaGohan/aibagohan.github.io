@@ -22,22 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 确保工具链接仅在小屏幕上显示
-    const passwordLink = document.getElementById('password-link');
-    if (window.innerWidth <= 600) {
-        passwordLink.style.display = 'block';
-    } else {
-        passwordLink.style.display = 'none';
-    }
-
-    window.addEventListener('resize', function() {
-        if (window.innerWidth <= 600) {
-            passwordLink.style.display = 'block';
-        } else {
-            passwordLink.style.display = 'none';
-        }
-    });
-
     document.querySelector('.hamburger').addEventListener('click', function() {
         const nav = document.getElementById('navbar');
         nav.classList.toggle('active');
