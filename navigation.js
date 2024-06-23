@@ -56,14 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1016070674" target="_blank">
                     <img src="${basePath}contact/qq-icon.svg" alt="QQ">
                 </a>
-                <a href="https://discordapp.com/users/315194753757085697" target="_blank">
-                    <img src="${basePath}contact/discord-icon.svg" alt="Discord">
-                </a>
                 <a href="https://2.cynops.art/@aibagogetsuhan" target="_blank">
                     <img src="${basePath}contact/mastodon-icon.svg" alt="Mastodon">
-                </a>
-                <a href="https://cohost.org/siboilingsalmon" target="_blank">
-                    <img src="${basePath}contact/cohost-icon.svg" alt="Cohost">
                 </a>
             `;
             document.body.appendChild(socialIcons); // 将 socialIcons 添加到 body
