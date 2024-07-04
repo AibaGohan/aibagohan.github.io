@@ -59,7 +59,7 @@ a, button, input[type="button"], input[type="submit"] {
 }
 
 ::selection {
-    background: rgb(50 50 50);
+    background:#F76902;
     color: #fffcf5;
 }
 
@@ -111,7 +111,7 @@ nav a:nth-child(3):hover { background-color: rgb(255, 177, 104); }
 nav a:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 
 nav a:hover {
-    background-color: #F47B32 !important;
+    background-color: #F76902 !important;
     color: black;
 }
 
@@ -274,7 +274,7 @@ ul{
 .tag1 {
     font-size: 1rem;
     display: inline-block;
-    color: #F47B32; /* 字体颜色 */
+    color: #F76902; /* 字体颜色 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
     vertical-align: middle;
 }
@@ -313,9 +313,9 @@ ul{
     margin-right: 5px; /* 标签之间的间距 */
     background-color: rgb(76, 150, 252);
     background-color: transparent !important;
-    border: 1.5px solid #F47B32; 
+    border: 1.5px solid #F76902; 
     border: 1px solid #3b392c !important;
-    color: #F47B32; /* 字体颜色 */
+    color: #F76902; /* 字体颜色 */
     color: #3b392c !important;
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
@@ -330,8 +330,8 @@ ul{
     margin-right: 9px; /* 标签之间的间距 */
     border: 1.5px solid #777; 
     color: #777; /* 字体颜色 */
-    color: #F47B32 !important;
-    border: 1px solid #F47B32 !important;
+    color: #F76902 !important;
+    border: 1px solid #F76902 !important;
     border-radius: 0px; /* 圆角边框 */
     font-family: 'Noto Sans','Noto Sans Japanese', 'Noto Sans Traditional Chinese', 'Noto Sans Simplified Chinese', sans-serif;
 }
@@ -397,7 +397,7 @@ ul{
 
 .category-items a:hover {
     background-color: rgb(76, 150, 252);
-    background-color: #F47B32 !important;
+    background-color: #F76902 !important;
     color: black;
     padding: 0px 6.5px 0.5px 6.5px;
 }
@@ -455,7 +455,7 @@ ul{
 }
 
 .b:hover {
-    background-color: #F47B32 !important;
+    background-color: #F76902 !important;
 }
 
 /* Additional hover colors for different links */
@@ -470,7 +470,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 .c:hover {
     background-color: rgb(76, 150, 252);
-    background-color: #F47B32 !important;
+    background-color: #F76902 !important;
     color:black;
 }
 
@@ -493,11 +493,11 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 .e:hover {
     background-color: rgb(255, 177, 104);;
     color:black;
-    background-color: #F47B32 !important;
+    background-color: #F76902 !important;
 }
 
 .article-link{
-    color: #F47B32;
+    color: #F76902;
     text-decoration: none;
 }
 
@@ -750,7 +750,7 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
 }
 
 .header-content .details-button:hover {
-    background-color: #F47B32;
+    background-color: #F76902;
 }
 
 .line {
@@ -864,15 +864,15 @@ b:nth-child(4):hover { background-color: rgb(147, 205, 190); }
     border-color: rgb(76, 150, 252); /* Orange border for hovered page link */
     background-color: rgb(76, 150, 252);
     color: black; /* To ensure text color stays black */
-    border-color: #F47B32 !important; /* Orange border for hovered page link */
+    border-color: #F76902 !important; /* Orange border for hovered page link */
     border-radius: 25px; /* Rounded border on hover */
-    background-color: #F47B32 !important;
+    background-color: #F76902 !important;
 }
 
 .page-link.active {
     padding: 8px 15px 8px 15px;
     border: 1.5px solid rgb(76, 150, 252); /* Orange border for the active page link */
-    border: 1.5px solid #F47B32 !important; /* Orange border for the active page link */
+    border: 1.5px solid #F76902 !important; /* Orange border for the active page link */
     color: black;
     border-radius: 25px; /* Rounded border for the active page */
     pointer-events: none; /* To prevent clicking on the active page number */
@@ -1056,7 +1056,7 @@ img {
 }
 
 .styled-button:hover, .styled-button-link:hover {
-    background-color: #F47B32; /* pink color on hover */
+    background-color: #F76902; /* pink color on hover */
     color: black;
     border: 1px solid black;
     box-shadow: 5px 5px 0 black; /* shadow effect */
