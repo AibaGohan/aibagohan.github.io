@@ -98,8 +98,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const updateCursorPosition = () => {
             const scrollX = window.scrollX;
             const scrollY = window.scrollY;
-            magicPointer.style.left = `${mouseX + scrollX}px`;
-            magicPointer.style.top = `${mouseY + scrollY}px`;
+            const maxX = document.documentElement.clientWidth - magicPointer.offsetWidth + scrollX;
+            const maxY = document.documentElement.clientHeight - magicPointer.offsetHeight + scrollY;
+            magicPointer.style.left = `${Math.min(maxX, Math.max(scrollX, mouseX + scrollX))}px`;
+            magicPointer.style.top = `${Math.min(maxY, Math.max(scrollY, mouseY + scrollY))}px`;
         };
 
         document.addEventListener('mousemove', (e) => {
@@ -115,13 +117,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const scrollY = window.scrollY;
             cursorX += (mouseX + scrollX - cursorX) * 0.125;
             cursorY += (mouseY + scrollY - cursorY) * 0.125;
-
-            magicMouseCursor.style.left = `${cursorX}px`;
-            magicMouseCursor.style.top = `${cursorY}px`;
-
+        
+            // Keep cursor within the window bounds to prevent scrollbars from appearing
+            const maxX = document.documentElement.clientWidth - magicMouseCursor.offsetWidth + scrollX;
+            const maxY = document.documentElement.clientHeight - magicMouseCursor.offsetHeight + scrollY;
+            magicMouseCursor.style.left = `${Math.min(maxX, Math.max(scrollX, cursorX))}px`;
+            magicMouseCursor.style.top = `${Math.min(maxY, Math.max(scrollY, cursorY))}px`;
+        
             requestAnimationFrame(animateCursor);
         }
-
+        
         // Initialize the cursor position at the mouse's current position
         function initCursor(e) {
             mouseX = e.clientX;
