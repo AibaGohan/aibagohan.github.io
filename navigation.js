@@ -128,7 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Initialize the cursor position at the mouse's current position
-        function initCursor(e) {
+        function initCursor() {
+            const e = { clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 };
             mouseX = e.clientX;
             mouseY = e.clientY;
             cursorX = mouseX;
@@ -138,8 +139,10 @@ document.addEventListener('DOMContentLoaded', function() {
             magicMouseCursor.style.left = `${mouseX}px`;
             magicMouseCursor.style.top = `${mouseY}px`;
         }
+        
+        // Directly initialize cursor position on page load
+        initCursor();
 
-        document.addEventListener('mousemove', initCursor, { once: true });
         animateCursor();
 
         document.querySelectorAll('a, button, .hover-effect').forEach((el) => {
