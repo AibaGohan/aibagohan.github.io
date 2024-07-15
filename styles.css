@@ -115,6 +115,12 @@ nav a:hover {
     color: black;
 }
 
+.linehead1{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #3b392c;
+}
+
 .linehead {
     position: relative;
     height: 3px; /* 包括上方線條和底部空間 */
