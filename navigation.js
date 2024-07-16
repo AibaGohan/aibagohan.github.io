@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://tieba.baidu.com/home/main?id=tb.1.428b3914.fTqSzh1wdmWO4V30k21dFw?t=1706283902" target="_blank">
                     <img src="${basePath}contact/tieba-icon.svg" alt="Tieba">
                 </a>
-                <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1016070674" target="_blank">
+                <a href="${basePath}contact/qrcode_1016070674.jpg" target="_blank">
                     <img src="${basePath}contact/qq-icon.svg" alt="QQ">
                 </a>
                 <a href="https://2.cynops.art/@aibagogetsuhan" target="_blank">
