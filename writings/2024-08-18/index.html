@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《喬安的一天》 | 本格水冷</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    h2{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        margin-top: 40px;
+    }
+
+    .folded-content {
+            display: none;
+    }
+
+    .toggle-btn {
+        cursor: pointer;
+        color: #3b392c;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .triangle {
+        width: 0;
+        height: 0;
+        margin-right: 5px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid #3b392c;
+        transition: transform 0.3s;
+    }
+
+    .triangle-down {
+        transform: rotate(180deg);
+    }
+</style>
+<body>
+    <header>
+        <img src="/top.svg" alt="logo" class="logo" id="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="/hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="../../navigation.js"></script>
+    <section class="article">
+        <div class="event-container">
+            <div class="event-details">
+                <span class="date1">2024.08.18</span>
+                <span class="separator">|</span>
+                <span class="tag1">電子小炒</span>
+                <span class="separator">|</span>
+                <span class="tag1">《迷霧》</span>
+            </div>
+            <div class="event-content">
+                喬安的一天
+            </div>
+        </div>
+        <p><strong>清晨，6點15分。</strong>
+        <br>
+        <br>窗外鳥聲細碎，晨光微曦。喬安早已起床梳洗完畢，正在鏡前檢點儀容。純白的女傭制服一塵不染，黑色棉質圍裙貼合腰身，象牙色襯衫熨燙平整，長及小腿的裙擺無一絲皺褶。她輕輕檢查髮箍，確保沒有一根髮絲不合適宜。
+        <br>
+        <br>一切妥當。
+        <br>
+        <br>她對鏡子露出一個淡淡的微笑，轉身走出了房間。
+        <br>
+        <br>廚房裡鍋勺交錯聲響不斷。喬安走過廚師們的身邊，目光如流光掠過現場的一切。她簡單檢查了一下今天的菜譜和食材剩餘量，確保酒水充足、餐具齊全，隨後不聲不響地移動了一個偏離的碟子，讓它回到應有的位置。廚師們繼續忙碌，並沒有因她的出現而停下手中的工作。
+        <br>
+        <br>「五月先生，早安。今天的餐點是大炎風味的粥品，清淡養胃，請慢用。」
+        <br>
+        <br>她微笑著將裝有粥品的瓷碗遞給剛進食堂的西奧。後者揉著惺忪的睡眼，沉默地點了點頭表示感謝。
+        <br>
+        <br><strong>早餐過後，9點05分。</strong>
+        <br>
+        <br>賬目、報告、任務列表、訓練計劃，羽毛筆在紙上沙沙作響，不時在文件上落下「Joan」的簽名。喬安坐在辦公桌前，目光在文件上流轉，迅速瀏覽、修正，然後繼續下一頁。處理瑣碎的文書對她而言已然成為日常，熟練得幾乎無需多加思索。
+        <br>
+        <br>「喬安姐姐...」
+        <br>
+        <br>伊蓮恩怯生生地站在門口，得到示意後才低著頭走到她身旁，小心翼翼地將一塊用紙巾包裹著的手工曲奇放在桌上，手指稍微按壓紙巾，似是在確保它不會鬆開。她們短暫對視後，小女孩隨即腳步輕緩轉身離去，不願打擾喬安的工作。
+        <br>
+        <br>喬安注視著那紙巾包裹的曲奇，緩緩展開，簡樸的曲奇露出表面，隨之滑落一張小紙條，在桌面上無聲地展開。她撿起紙條，目光掃過上面的字：「With love ♡♡♡ Bethany & Elaine」。
+        <br>
+        <br>片刻後，她將紙條折好，連同曲奇一起放入裙袋中，重新專注於手頭的工作，嘴角的笑意加深了一分。
+        <br>
+        <br><strong>剛過12點。</strong>
+        <br>
+        <br>計時器滴答作響，不知過了多久。喬安輕輕按了按太陽穴，走向訓練場。
+        <br>
+        <br>正午的陽光在哈迪斯總部外的永凍冰雪上閃爍，而訓練場上卻是另一番景象。
+        <br>
+        <br>鼠人形態的朱恩與喬安佇立在場地中央，手中木劍質樸而沉穩。兩人目光交匯，無聲中較量已然開始。
+        <br>
+        <br>「預備，開始——」
+        <br>
+        <br>話音剛落，朱恩便如閃電般躍向前方，劍影如風直指喬安。她側身一閃，優雅地架住攻勢，木劍在空中劃出一道弧線。
+        <br>
+        <br>木劍相擊，聲音清脆響亮。兩人身影在場中交錯，來回之間氣氛緊繃。喬安眼神突然一凛，攻擊策略驟變；朱恩仓促招架，卻不敵師姐那如同洪水般汹涌而至的攻擊，被木劍擊中肩膀。肩膀劇痛讓他皺眉卻仍忍著痛楚，繼續全力投入對練。
+        <br>
+        <br>場邊，格雷對著訓練木樁漫不經心地揮砍，目光卻不時偷瞄食堂。午餐時間已到，相比起揮汗如雨的訓練，他顯然更想飛奔去食堂與基層成員們打成一片盡情享受午餐時光。但礙於師姐的威嚴不敢輕易缺席。
+        <br>
+        <br>梅伊則早已將劍扔到一旁，毫不掩飾地把注意力完全放在場中的對決上，大聲對著弟弟的行動指點江山。
+        <br>
+        <br>當喬安擋下朱恩最後一擊後，宣告今日訓練結束，便將木劍收起，步履從容地走向場邊的休息區。朱恩喘著粗氣點頭致謝，隨即變回鼠形態跳上梅伊的肩膀。格雷見狀悄悄地溜向了食堂。
+        <br>
+        <br>「這就不行了？我們小老鼠今天又被修理慘了啊。」梅伊笑盈盈地嘲諷著自己的弟弟，「早就說了這樣下去你永遠贏不了。不如跟好哥哥我來學點真本事？」
+        <br>
+        <br>喬安眉頭微蹙，正欲開口，梅伊卻猝不及防地將目光投向她，言道：
+        <br>
+        <br>「別急啊師姐，你也有份。」
+        <br>
+        <br>隨後迫不及待地將一把自製轉輪槍放在桌上，手指一推，手槍滑行幾寸，停在喬安面前。
+        <br>
+        <br>「這可是我花了大工夫做的，別老抱著劍不放，時代變了，現在流行的是熱兵器。要不試試看，加點新花樣，免得跟不上潮流？」
+        <br>
+        <br>語畢，也不等回應，梅伊迅速拍了拍喬安的肩膀，旋即腳底抹油般迅速逃之夭夭，仿佛再多待一秒便會招致師姐的冷酷反擊。
+        <br>
+        <br>其肩膀上的朱恩則直接回頭，對著喬安雙手合十，微微點頭以示歉意。
+        <br>
+        <br>喬安看著桌上的槍，微笑著將它收起，決定將梅伊今後的訓練量增加兩倍。
+        <br>        
+        <br>喔對了，格雷也是。
+        <br>
+        <br><strong>下午，2點30分。</strong>
+        <br>
+        <br>喬安開始了她的日常巡視。
+        <br>
+        <br>無聲而迅捷，如同一道幽靈般掠過哈迪斯總部的每個角落。
+        <br>
+        <br>圖書館裡，一本歪斜的書在她指尖下歸位。武器庫內，每件武器都在她的注視下變得井然有序。走廊上，剛織成的新鮮蛛網在她的手帕下悄然消失。訓練場上，散落的器材在她身後重新列隊。
+        <br>
+        <br>溫室裡，一隻蟋蟀與花瓣一同凋落。食材儲藏室裡，正慾偷吃巧克力的蘭登發現自己瞬間回到了自己的房間。
+        <br>
+        <br>大廳裡，百無聊賴玩著腹語術妨礙打掃的紅眼閒漢，瞬間消失在清掃完成的地面上。
+        <br>
+        </p>
+        <div class="toggle-btn" id="toggle-content">
+            <div class="triangle" id="triangle"></div>
+            <span id="toggle-text">顯示更多...</span>
+        </div>
+        <div id="folded-content" class="folded-content">
+            <p>
+                <br><strong>下午，4點30分。</strong>
+                <br>
+                <br>會議廳內，幹部們齊聚一堂，準備開始每週的例行會議。
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>五點，醫療翼。
+                <br>六點，晚飯。飯後協助收拾廚房。
+                <br>八點半，和其他女僕核對好今日已打掃的房間，確保routine。
+                <br>十點，抓格雷過來和公爵通電話。
+                <br>
+                <br>
+                <br>
+                <br>乔安當即放下手頭的一切，躬身聆聽傳信者的吩咐。<s>公爵有令，需得速速轉告"一月"。她神色凝重地點點頭，鞠躬目送來人離去。然後立刻前往拉蒂夫的辦公室，將密信雙手奉上。拉蒂夫掃了一眼，臉色微變。他沉吟片刻，吩咐乔安去通知首領，隨後便揮手讓她離開了。</s>
+                <br>
+                <br>黃昏時分，6點整。
+                <br>
+                <br>夕陽西斜，一天的喧囂漸歇。乔安在廚房忙碌著，為晚餐做最後的準備。同時，她還要核對一下晚宴的菜單，確保酒水充足，餐具齊全。女僕長的工作，從來都不輕鬆。但乔安無怨無悔，這是她的职责，更是她的驕傲。
+                <br>
+                <br>入夜，10點45分。
+                <br>
+                <br>難得的閒暇時光，喬安坐在床邊，從口袋裡拿出那塊曲奇，輕輕咬了一口。甜蜜的味道在舌尖融化，像是長久以來壓抑的情感，悄然間釋放開來。
+                <br>
+                <br>午夜時分，11點55分。
+                <br>
+                <br>喬安在落地窗前伫立。今夜無月，群星隱匿，只有幾點螢火在漆黑中明滅。良久，她轉身走向床鋪，躺下，閔上雙眼。在夢裡，她依舊活在當下，不再回首過往，也沒有未來。
+                <br>
+                <br><strong>時鐘指向12點整，分秒不差。</strong>
+            </p>
+            <!-- Subsequent content -->
+        </div>
+    </section>
+    <script src="../../footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#toggle-content').on('click', function() {
+                $('#folded-content').slideToggle();
+                $('#triangle').toggleClass('triangle-down');
+                $('#toggle-text').text($('#toggle-text').text() == '顯示更多...' ? '顯示更少...' : '顯示更多...');
+            });
+        });
+    </script>
+</body>
+</html>
