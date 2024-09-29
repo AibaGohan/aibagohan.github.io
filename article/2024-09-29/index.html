@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偶像到底是什麼呢？ | 本格水冷</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    .event-container{
+        margin-bottom: 50px;
+    }
+    .folded-content {
+            display: none;
+    }
+
+    .toggle-btn {
+        cursor: pointer;
+        color: #3b392c;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .triangle {
+        width: 0;
+        height: 0;
+        margin-right: 5px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid #3b392c;
+        transition: transform 0.3s;
+    }
+
+    .triangle-down {
+        transform: rotate(180deg);
+    }
+</style>
+<body>
+    <header>
+        <img src="/top.svg" alt="logo" class="logo" id="logo">
+        <button class="hamburger" aria-label="Open Menu"><img src="/hamburger.svg" alt="Menu" /></button>
+        <nav id="navbar">
+            <a href="/">本站簡介</a>
+            <a href="/character/2024">人設存放</a>
+            <a href="/note">雜七雜八</a>
+            <a href="/contact">假人慢打</a>
+            <a href="/tools" id="tools-link">龍的寶庫</a>
+            <a href="/dice" id="dice-link">線上擲骰</a>
+        </nav>
+    </header>
+    <section id="about" style="margin-top: 0px; margin-bottom: 0px;"><div class="linehead"></div></section>
+    <script src="../../navigation.js"></script>
+    <section class="article">
+        <div class="event-container">
+            <div class="event-details">
+                <span class="date1">2024.09.29</span>
+                <span class="separator">|</span>
+                <span class="tag1">長篇文章</span>
+                <span class="separator">|</span>
+                <span class="tag1">隨筆雜談</span>
+                <span class="separator">|</span>
+                <span class="tag1">二次元</span>
+            </div>
+            <div class="event-content">
+                偶像到底是什麼呢？
+            </div>
+        </div>
+        <h3>00｜寫在前面</h3>
+        <p>
+            本文是學院愛馬仕（學馬仕）的心得文。
+            <br>bro如果是抱著想看我抨擊娛樂偶像產業的心態點進來的話現在就可以退出去了，沒有你期待的那種東西哈哈哈。
+        </p>
+        <h3>01｜正文</h3>
+        <p>雖然偶像大師幾乎所有正作在遊戲玩法上都是偏向硬核的養成對戰，一切都是實力至上，但是在價值觀念上又與之有所偏差，有著日式偶像產業的鮮明特色。
+            <br>也就是，偶像不只是唱歌跳舞甚至可愛的外表，還有向觀眾展現的精神面貌。
+            <br>但這個所謂的精神面貌到底是什麼呢？如果偶像不只唱跳和臉蛋，那到底還需要什麼才能算是偶像呢？
+            <br>
+            <br>偶像到底是什麼呢？這是偶像大師系列一直以來探討的問題。
+            <br>
+            <br>在系列中，一個不太成文的傳統是，承載這個主題的主要人物往往是信號燈三人組中的紅色系角色。她們通常在最開始都沒有明確的成為偶像的願望，因為某些隨便的契機而走上這條道路（春日未來、櫻木真乃、天道輝），或者對自己成為偶像的事情缺乏自信（島村卯月），然後在成長中慢慢找到自己心目中偶像的意義。
+            <br>
+            <br>到了學院偶像大師，乍看上去這個傳統好像被丟掉了：花海咲季這個人物，自信自愛、性格強勢、能力優秀、努力刻苦、堅定不移地要成為高人氣的偶像，可以說是暴君型的人設（完全不是我的菜）。雖然這次的信號燈三人組都是打破了常規，但是作為中心的紅色系，咲季似乎還是顯得太不主角了。
+            <br>
+            <br>但如果仔細遊玩一遍咲季的育成線路，會發現雖然明面上的很多東西都是顛覆的，但有些傳統還是沒有丟掉。
+            <br>
+            <br>咲季雖然初始能力值很高，但是成長率很低，正如她自己所言：她其實是一位「虛假的天才」。身為早熟（成長率意味）的姐姐家裡有一個大器晚成的妹妹，不論做什麼都會被真正天才的妹妹快速超越，最終只能把偶像事業當作最後的救命稻草，希望能至少有一件事情做得比妹妹更好。光鮮亮麗的軀殼下有著非常窘迫的一面（突然就徹底變成了我的菜）。
+            <br>
+            <br>然而整個育成線路裡，玩家都在不斷地看到妹妹的神速進步以及咲季堪比龜速的能力成長。隨著最終考核臨近，遊戲裡的一切資訊都在告訴玩家，咲季這次還是會被妹妹給比下去。
+            <br>就連咲季自己，雖然依然保持著一貫的鬥志，也更像是做好了「站著死」的覺悟。
+            <br>
+            <br>畢竟遊戲需要，最後咲季當然是贏了。
+            <br>但是，她向玩家扮演的製作人問了一個連玩家本人大概都會好奇的問題：明明她的能力全面不如妹妹，為什麼最後她的排位還是比妹妹更高呢？
+            <br>製作人很含糊地回答說，偶像並不是單純比較唱跳能力那麼簡單的。
+            <br>
+            <br>隨後玩家會看到，在製作人的筆記本裡，咲季幾乎全面被妹妹碾壓的能力六圍圖裡，唯獨「偶像力」的那一項突出來一塊。
+            <br>
+            <br>偶像到底是什麼呢？
+            <br>
+        </p>
+        </div>
+    </section>
+    <script src="/footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#toggle-content').on('click', function() {
+                $('#folded-content').slideToggle();
+                $('#triangle').toggleClass('triangle-down');
+                $('#toggle-text').text($('#toggle-text').text() == '顯示更多...' ? '顯示更少...' : '顯示更多...');
+            });
+        });
+    </script>
+</body>
+</html>
